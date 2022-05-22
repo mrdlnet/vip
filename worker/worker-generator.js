@@ -7,10 +7,10 @@ const clientId = '';
 const clientSecret = '';
 const grantType = 'authorization_code';
 const redirectURI = 'https://example.com';
-const jsURL = 'https://gitlab.com/ParveenBhadooOfficial/Google-Drive-Index/-/raw/master/worker/worker-super.js';
+const jsURL = 'https://raw.githubusercontent.com/mrdlnet/vip/master/worker/worker-legacy.js';
 
 async function handleRequest(request) {
-    let title = getParameterByName(request.url, 'site_name') || 'Bhadoo Drive Index';
+    let title = getParameterByName(request.url, 'site_name') || 'MRDL';
     let auth_code = getParameterByName(request.url, 'auth_code');
     let root = getParameterByName(request.url, 'root') || 'root';
     let user = getParameterByName(request.url, 'user') || '';
@@ -45,7 +45,7 @@ async function handleRequest(request) {
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no"/>
-    <title>Bhadoo Drive Index - Beta</title>
+    <title>MRDL</title>
     <link rel="icon" type="image/x-icon" href="https://www.cloudflare.com/favicon.ico"/>
     <link href="https://cdn.jsdelivr.net/npm/bootswatch@5.0.0/dist/slate/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
@@ -284,8 +284,8 @@ async function handleRequest(request) {
 <body">
 <div class="container">
     <br>
-    <a href="/"><img border="0" alt="Bhadoo Cloud" src="https://cdn.jsdelivr.net/npm/@googledrive/index@2.0.20/images/bhadoo-cloud-logo-white.svg" height="" width="150px"></a>
-    <a href="https://gitlab.com/ParveenBhadooOfficial/Google-Drive-Index"><h5>Bhadoo Index Generator - Beta</h5></a>
+    <a href="/"><img border="0" alt="MRDL" src="https://raw.githubusercontent.com/mrdlnet/vip/master/images/bhadoo-cloud-logo-white.svg" height="" width="150px"></a>
+    <a href="https://MRDL.net"><h5>MRDL Generator</h5></a>
     <br>
         <div id="loginuser" style="display:block;">
             <h3>1. <a href="https://accounts.google.com/o/oauth2/auth?client_id=${clientId}&redirect_uri=${redirectURI}&response_type=code&access_type=offline&scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fdrive&prompt=select_account+consent"><img src="https://developers.google.com/identity/images/btn_google_signin_dark_normal_web.png"></a></h3>
@@ -325,7 +325,7 @@ async function handleRequest(request) {
     <div id="thirdstep1" class="overflow-auto" style="background-color:#000;">
         <pre class="snippet"><code class="html js">${codeJS}</code></pre>
     </div>
-    <center><p>© <span id="year"></span> - Bhadoo Cloud Cyber Systems</p></center>
+    <center><p>© <span id="year"></span> - MRDL</p></center>
 </div>
 
 <script>
